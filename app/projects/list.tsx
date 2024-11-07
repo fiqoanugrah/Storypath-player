@@ -128,9 +128,9 @@ export default function ProjectsList() {
         router.push('/profile');
         return;
       }
-
+  
       router.push({
-        pathname: `/projects/home`,
+        pathname: `/projects/${project.id}`,
         params: { 
           projectId: project.id,
           projectTitle: project.title 
